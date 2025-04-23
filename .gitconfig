@@ -1,0 +1,29 @@
+[user]
+	email = diego.salgado@mercadolibre.com.co
+	name = Diego Salgado
+	signingkey = /Users/diesalgado/.ssh/id_ed25519_melisource.pub
+[core]
+	hooksPath = /Users/diesalgado/.config/git/hooks/
+	symlinks = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	pob = !git branch --show-current | xargs git push origin
+	ssb = status -sb
+[url "git@github.com:mercadolibre/"]
+	insteadOf = https://github.com/mercadolibre/
+	insteadOf = https://github.com/mercadolibre/
+[url "git@github.com-emu:diesalgado_meli/"]
+	insteadOf = https://github.com/diesalgado_meli/
+[url "git@github.com-emu:melisource/"]
+	insteadOf = https://github.com/melisource/
+	insteadOf = git@github.com:melisource/
+	insteadOf = https://github.com/melisource/
+	insteadOf = git@github.com:melisource/
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

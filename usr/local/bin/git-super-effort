@@ -1,0 +1,1 @@
+git effort | sort -nk2 | tail | awk {'printf ("%1s\t%s\n", $1, $2)'} | awk 'BEGIN{printf ("Files\tCommits\n")}1'
