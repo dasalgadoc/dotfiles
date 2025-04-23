@@ -12,7 +12,7 @@ Este repositorio contiene mi configuración personal de desarrollo para macOS, i
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/tu-usuario/dotfiles.git ~/.dotfiles
+git clone https://github.com/dasalgadoc/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
